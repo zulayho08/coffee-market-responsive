@@ -1,0 +1,113 @@
+@import "../mixins/mixin";
+@import "../colors/color";
+
+.header {
+  width: 1280px;
+  @include center();
+  display: flex;
+  padding: 10px;
+  padding: 20px;
+
+  &__logo {
+    margin-left: -50px;
+    width: 236px;
+    height: 26px;
+    top: 43.56px;
+    left: 80.1px;
+    padding: 0.44px, 0.1px, 0.56px, 0.9px;
+  }
+
+  &__list {
+    @include list();
+    margin-right: -90px;
+    margin-left: 700px;
+    width: 353px;
+    height: 15px;
+    top: 50px;
+    left: 1077px;
+    padding: 0px, 1px, 0px, 0px;
+  }
+
+  &__list--item {
+    margin-left: 20px;
+    font-family: Barlow;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.9230769276618958px;
+    text-align: left;
+  }
+
+  &__link {
+    @include link();
+    color: $darkgrey;
+  }
+
+  &__link:active {
+    color: $darkColor;
+  }
+
+  .burger__img {
+    display: none;
+  }
+}
+
+// TABLET
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 689px;
+    height: 26px;
+    margin-bottom: 10px;
+    @include center();
+    margin-left: 40px;
+
+    &__logo {
+      width: 236px !important;
+      height: 26px !important;
+      margin-right: 90px;
+    }
+
+    &__list {
+      margin-left: 80px;
+      width: 483px;
+      height: 15px;
+      top: 46px;
+      left: 445px;
+      padding: 0px, 1px, 0px, 0px;
+    }
+
+    &__list--item {
+      margin-left: 15px;
+      height: 15px;
+      left: 161px;
+    }
+  }
+
+  .burger__img {
+    display: none;
+  }
+}
+
+// MOBILE
+
+@media only screen and (max-width: 375px) {
+  .header {
+    width: 327px;
+
+    &__logo {
+      width: 163px !important;
+      height: 18px !important;
+      margin-left: -80px !important;
+      margin-right: 140px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    .burger__img {
+      display: block;
+    }
+  }
+}

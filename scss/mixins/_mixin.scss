@@ -1,0 +1,25 @@
+@mixin center {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin link {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+}
+
+@mixin bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
