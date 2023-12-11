@@ -1,0 +1,166 @@
+.content {
+  width: 1045px;
+  height: 685px;
+  padding-top: 100px;
+  @include center();
+  margin-bottom: 50px;
+
+  &__head {
+    font-family: Fraunces;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(131, 136, 143, 1);
+  }
+
+  &__list {
+    @include list();
+    width: 1045px;
+  }
+
+  &__item {
+    margin-right: 95px;
+  }
+
+  .span {
+    font-family: Fraunces;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(253, 214, 186, 1);
+    margin-left: -200px;
+  }
+
+  &__item--head {
+    width: 255px;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(51, 61, 75, 1);
+  }
+
+  &__item--text {
+    width: 285px;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(51, 61, 75, 1);
+  }
+
+  &__btn {
+    margin-top: 70px;
+    text-align: left;
+  }
+
+  &__link {
+    @include link();
+    color: rgba(254, 252, 247, 1);
+    background-color: rgba(14, 135, 132, 1);
+    border-radius: 8px;
+    font-family: Fraunces;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0px;
+    padding: 20px;
+    margin-left: -1px;
+  }
+}
+
+// TABLET
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 689px;
+
+    &__list {
+      width: 689px;
+    }
+
+    &__item {
+      margin-right: 20px;
+    }
+
+    .span {
+      margin-left: -130px;
+    }
+
+    &__item--head {
+      width: 223px;
+      font-family: Fraunces;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    &__item--text {
+      width: 223px;
+      font-family: Barlow;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    &__link {
+      margin-left: -1px;
+    }
+  }
+}
+
+// MOBILE
+
+@media only screen and (max-width: 375px) {
+  .content {
+    width: 327px;
+
+    &__head {
+      font-family: Fraunces;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    &__list {
+      width: 327px;
+      display: inline;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+
+    .span {
+      @include center();
+    }
+
+    &__item--head {
+      text-align: center;
+      width: 327px;
+    }
+
+    &__item--text {
+      text-align: center;
+      width: 327px;
+    }
+
+    &__link {
+      margin-left: 65px;
+    }
+  }
+}

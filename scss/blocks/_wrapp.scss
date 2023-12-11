@@ -1,0 +1,151 @@
+.wrapp {
+  width: 1111px;
+  height: 525px;
+  background-image: url("/images/wrapp__bg.png");
+  @include bg();
+  background-position: top;
+  @include center();
+
+  &__list {
+    display: flex;
+    @include center();
+  }
+
+  &__item {
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+
+  &__item--img {
+    width: 256px;
+    height: 193px;
+  }
+
+  &__head {
+    font-family: Fraunces;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(51, 61, 75, 1);
+  }
+
+  &__text {
+    width: 255px;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(51, 61, 75, 1);
+  }
+}
+
+// TABLET
+
+@media only screen and (max-width: 768px) {
+  .wrapp {
+    width: 689px;
+    height: 927px;
+    @include center();
+    background-image: url("/images/tablet-wrapp.png");
+    @include bg();
+    background-position: top;
+
+    &__list {
+      width: 573px;
+      height: 868px;
+      display: inline;
+    }
+
+    &__item {
+      width: 573px;
+      height: 93px;
+      display: flex;
+      margin-bottom: 0px;
+    }
+
+    .item__left {
+      width: 255px;
+      height: 193px;
+    }
+
+    .item__right {
+      width: 282px;
+      height: 106px;
+    }
+
+    &__head {
+      width: 255px;
+      font-family: Fraunces;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    &__text {
+      width: 282px;
+      font-family: Barlow;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+}
+
+// MOBILE
+
+@media only screen and (max-width: 375px) {
+  .wrapp {
+    width: 327px;
+    padding-top: 50px;
+    height: 1321px;
+    background-image: url("/images/our_collection.png");
+    @include bg();
+    background-position: top;
+
+    &__list {
+      display: inline;
+    }
+
+    &__item {
+      display: inline;
+      margin-bottom: 0px;
+    }
+
+    .item__left {
+      width: 200px;
+      height: 151px;
+    }
+
+    .item__right {
+      width: 282px;
+      height: 98px;
+    }
+
+    &__head {
+      width: 255px;
+      font-family: Fraunces 9pt;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    &__text {
+      width: 282px;
+      font-family: Barlow;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+    }
+  }
+}

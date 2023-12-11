@@ -122,6 +122,7 @@
     @include bg();
     margin-top: 10px;
     @include center();
+    margin-bottom: 100px;
 
     &__wrapp {
       width: 398px;

@@ -1,0 +1,222 @@
+.pending {
+  background-color: rgba(44, 52, 62, 1);
+  border-radius: 8px;
+  width: 1280px;
+  height: 600px;
+  @include center();
+  color: rgba(254, 252, 247, 1);
+  margin-bottom: 100px;
+
+  &__head {
+    font-family: Fraunces;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  &__text {
+    width: 540px;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    @include center();
+  }
+
+  &__list {
+    @include list();
+
+    margin: 0 auto;
+    width: 1110px;
+    height: 382px;
+    position: relative;
+    top: 100px;
+  }
+
+  &__item {
+    margin-left: 20px;
+    width: 350px;
+    height: 382px;
+    background-color: rgba(14, 135, 132, 1);
+    border-radius: 8px;
+  }
+
+  &__item--img {
+    margin-top: 70px;
+    width: 72px;
+    height: 72px;
+  }
+
+  &__item--head {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 255px;
+    font-family: Fraunces;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  &__item--text {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 255px;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+// TABLET
+
+@media only screen and (max-width: 768px) {
+  .pending {
+    width: 688px;
+    height: 863px;
+
+    &__head {
+      font-family: Fraunces;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 48px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    &__text {
+      width: 540px;
+      font-family: Barlow;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    &__list {
+      display: inline;
+    }
+
+    &__item {
+      display: flex;
+      margin: 0 auto;
+      width: 573px;
+      height: 180px;
+      margin-bottom: 20px;
+    }
+
+    &__item--left {
+      margin-right: 70px;
+      margin-left: 30px;
+    }
+
+    &__item--right {
+      margin-top: 40px;
+      width: 344px;
+      display: inline;
+    }
+
+    &__item--head {
+      margin-top: 0;
+      font-family: Fraunces;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    &__item--text {
+      width: 344px;
+      font-family: Barlow;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+}
+
+// MOBILE
+
+@media only screen and (max-width: 375px) {
+  .pending {
+    width: 327px;
+    height: 902px;
+    margin-bottom: 350px;
+
+    &__head {
+      font-family: Fraunces;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    &__text {
+      width: 279px;
+      font-family: Barlow;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    &__list {
+      display: inline;
+    }
+
+    &__item {
+      display: inline-block;
+      margin: 0 auto;
+      width: 279px;
+      height: 282px;
+      margin-bottom: 20px;
+    }
+
+    &__item--left {
+      @include center();
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .pending__item--img {
+      margin-top: 0;
+    }
+
+    &__item--right {
+    }
+
+    &__item--head {
+      margin-top: 0;
+      font-family: Fraunces;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    &__item--text {
+      width: 212px;
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+}
